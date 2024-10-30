@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="2.9.1">
+  <partials/>
+  <file path="AI.php" generated-path="AI.html" hash="893aa73c6d2d22661b4d5cb5b48da846" package="IrisnetAPIClient">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="IrisnetAPIClient"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="" line="21" package="IrisnetAPIClient">
+      <extends/>
+      <name>AI</name>
+      <full_name>\AI</full_name>
+      <docblock line="21">
+        <description>Helper class to connect to the irisnet AI.</description>
+        <long-description></long-description>
+        <tag name="package" line="21" description="IrisnetAPIClient"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="61" package="IrisnetAPIClient">
+        <name>checkImage</name>
+        <full_name>\AI::checkImage()</full_name>
+        <docblock line="61">
+          <description>Makes the API call to check the image for the specified rules.</description>
+          <long-description></long-description>
+          <tag name="param" line="61" description="&lt;p&gt;the name (including path) of the image or url of an image that needs to be checked.&lt;/p&gt;" type="string" variable="$file">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="61" description="&lt;p&gt;the given name of the rule set.&lt;/p&gt;" type="string" variable="$rule">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="61" description="&lt;p&gt;Sets the response details. Use 1 (default) for minimum detail (better API performance), 2 for medium details and 3 for all details.&lt;/p&gt;" type="integer" variable="$detail">
+            <type>integer</type>
+          </tag>
+          <tag name="param" line="61" description="&lt;p&gt;the id of the license key to use. Omit if the next available license key should be used.&lt;/p&gt;" type="integer" variable="$licenseId">
+            <type>integer</type>
+          </tag>
+          <tag name="throws" line="61" description="is thrown in case that the rule name could not be found, if the license id does not exist,&#10;if the license key is not active or out of credits, if the specified filename does not exist&#10;or if the API request fails (will contain the status code and the message returned from the failed API request)." type="\IrisnetException">
+            <type>Inc\IrisnetException</type>
+          </tag>
+          <tag name="return" line="61" description="Contains information on the AI result from the source media check. See &lt;a href=&quot;https://www.irisnet.de/api/&quot;&gt;API page&lt;/a&gt; for more information" type="\Irisnet\APIV1\Client\Model\IrisNet">
+            <type>\Irisnet\APIV2\Client\Model\CheckResult</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$file</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$rule</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$detail</name>
+          <default>1</default>
+          <type>integer</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$licenseId</name>
+          <default>null</default>
+          <type>integer</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+  </file>
+  <package name="IrisnetAPIClient" full_name="IrisnetAPIClient"/>
+  <package name="global" full_name="global"/>
+  <namespace name="global" full_name="global"/>
+  <deprecated count="0"/>
+</project>
